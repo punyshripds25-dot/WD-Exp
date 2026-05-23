@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="openTab('account', this)">Account</button>
+  <button class="tab-btn" onclick="openTab('notification', this)">Notification</button>
+  <button class="tab-btn" onclick="openTab('privacy', this)">Privacy</button>
+</div>
+
+<div id="account" class="tab active">
+  <input id="username" placeholder="Username">
+  <input id="phone" placeholder="Phone Number">
+  <input id="email" placeholder="Email">
+  <input id="password" placeholder="New Password">
+
+  <button onclick="saveProfile()">Save</button>
+</div>
+
+<div id="notification" class="tab">
+  <label><input type="checkbox"> SMS</label>
+  <label><input type="checkbox"> Email</label>
+  <label><input type="checkbox"> Push</label>
+</div>
+
+<div id="privacy" class="tab">
+  <label><input type="checkbox"> Private Account</label>
+  <label><input type="checkbox" onclick="toggleMode()"> Light Mode</label>
+  <label><input type="checkbox" onclick="openOTP()"> Enable 2FA</label>
+</div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+</body>

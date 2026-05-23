@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+  <h2>User Info</h2>
+
+  <p>Username: <span id="username"></span></p>
+  <p>Email: <span id="email"></span></p>
+  <p>Number: <span id="phone"></span></p>
+  <p>Password: <span id="password"></span></p>
+</div>
+
+<script id="7klm2n">
+document.getElementById("username").innerText = localStorage.getItem("username");
+document.getElementById("email").innerText = localStorage.getItem("email");
+document.getElementById("phone").innerText = localStorage.getItem("phone");
+document.getElementById("password").innerText = localStorage.getItem("password");
+</script>
+</div>
+</body>
